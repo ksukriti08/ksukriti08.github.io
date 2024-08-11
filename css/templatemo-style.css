@@ -1075,8 +1075,8 @@ header {
 
   .video-container video {
     width: auto;  /* Set the width to 60% of its container */
-    height: 60%;  /* Maintain aspect ratio */
-    max-height: 300px; /* Optional: Set a maximum height */
+    height: 70%;  /* Maintain aspect ratio */
+    max-height: 350px; /* Optional: Set a maximum height */
     object-fit: cover;
 }
 
