@@ -1074,17 +1074,21 @@ header {
   }
 
   .video-box {
-    width: 306px;   /* Set the width of the container */
-    height: 360px;  /* Set the height of the container */
-    overflow: hidden;  /* Hide any overflow to ensure the video fits */
+    width: 306px;   /* Set the exact width of the container */
+    height: 360px;  /* Set the exact height of the container */
+    overflow: hidden;  /* Hide overflow to make sure the video doesn't spill out */
     position: relative;
+    display: flex;  /* Center the video */
+    align-items: center;
+    justify-content: center;
 }
 
 .video-box video {
-    width: 100%;   /* Make the video width fill the container */
-    height: 100%;  /* Make the video height fill the container */
-    object-fit: cover;  /* Ensure the video covers the entire container */
+    width: 306px;  /* Force the video width to 306px */
+    height: 360px; /* Force the video height to 360px */
+    object-fit: cover;  /* Ensure the video covers the container completely */
 }
+
 
 
 
