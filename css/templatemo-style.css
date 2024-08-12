@@ -1073,11 +1073,19 @@ header {
     padding-right: 15px;
   }
 
-  .video-container video {
-    width: 60%;  /* Set the width to 60% of its container */
-    height: 40%;  /* Maintain aspect ratio */
-    max-height: 200px; /* Optional: Set a maximum height */
+  .video-box {
+    width: 306px;   /* Set the width of the container */
+    height: 360px;  /* Set the height of the container */
+    overflow: hidden;  /* Hide any overflow to ensure the video fits */
+    position: relative;
 }
+
+.video-box video {
+    width: 100%;   /* Make the video width fill the container */
+    height: 100%;  /* Make the video height fill the container */
+    object-fit: cover;  /* Ensure the video covers the entire container */
+}
+
 
 
 }
