@@ -839,6 +839,24 @@ header {
   margin-top: 25px;
 }
 
+#my-video-box {
+  width: 306px;
+  height: 360px;
+  overflow: hidden; /* Ensures that any overflow is hidden */
+  position: relative; /* Creates a containing block for absolute positioning */
+}
+
+#my-video-box video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%; /* Ensures the video height fills the container */
+  transform: translate(-50%, -50%); /* Centers the video in the container */
+  min-width: 100%; /* Ensures the video width fills the container */
+  min-height: 100%; /* Ensures the video height fills the container */
+  object-fit: cover; /* Ensures the video covers the container without stretching */
+}
 
 
 
@@ -935,24 +953,6 @@ header {
   font-weight: 600;
 }
 
-.video-box {
-  width: 306px;
-  height: 360px;
-  overflow: hidden; /* Ensures that any overflow is hidden */
-  position: relative; /* Creates a containing block for absolute positioning */
-}
-
-.video-box video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: 100%; /* Ensures the video height fills the container */
-  transform: translate(-50%, -50%); /* Centers the video in the container */
-  min-width: 100%; /* Ensures the video width fills the container */
-  min-height: 100%; /* Ensures the video height fills the container */
-  object-fit: cover; /* Ensures the video covers the container without stretching */
-}
 
 /* Responsive Style */
 
