@@ -127,14 +127,14 @@ body {
 .timeline-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 10px; /* Reduced padding to decrease space */
+  padding: 10px 20px; /* Reduced padding to decrease space */
   text-align: center;
 }
 
 .timeline-heading {
   font-size: 36px;
-  color: #4a4a8c;
-  margin-bottom: 10px; /* Reduced margin below heading */
+  color: #45489a;
+  margin-bottom: 20px; /* Reduced margin below heading */
   margin-top: 10px; /* Reduced margin above heading */
 }
 
@@ -142,7 +142,7 @@ body {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0; /* Reduced top and bottom padding */
 }
 
 .timeline-item {
@@ -162,7 +162,7 @@ body {
 }
 
 .timeline-icon {
-  background-color: #4a4a8c;
+  background-color: #45489a;
   color: #fff;
   width: 50px;
   height: 50px;
@@ -171,9 +171,9 @@ body {
   justify-content: center;
   border-radius: 50%;
   position: relative;
-  z-index: 1;
+  z-index: 2; /* Ensure the icon stays on top of the line */
   font-size: 24px;
-  margin: 0 20px; /* Adds space between the icon and the content */
+  margin: 0 40px; /* Added margin to keep the icon away from the line */
 }
 
 .timeline-content {
@@ -187,7 +187,7 @@ body {
 
 .timeline-content h3 {
   margin-top: 0;
-  color: #4a4a8c;
+  color: #45489a;
   font-size: 24px;
 }
 
@@ -207,19 +207,19 @@ body {
   position: absolute;
   width: 4px;
   height: 100%;
-  background-color: #4a4a8c;
+  background-color: #45489a;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 0;
+  z-index: 1;
 }
 
 .timeline-item:nth-child(odd)::before {
-  left: calc(50% - 27px);
+  left: calc(50% - 37px); /* Adjusted to accommodate the icon margin */
 }
 
 .timeline-item:nth-child(even)::before {
-  left: calc(50% + 27px);
+  left: calc(50% + 37px); /* Adjusted to accommodate the icon margin */
 }
 
 @media screen and (max-width: 768px) {
@@ -248,6 +248,7 @@ body {
       width: 100%;
   }
 }
+
 
 
 
