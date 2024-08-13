@@ -862,13 +862,13 @@ body {
 
 /* Blog Style */
 
-#blog {
+#travel {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
 }
 
-#blog .tabs {
+#travel .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -878,7 +878,7 @@ body {
   border-bottom: 10px solid #45489a;
 }
 
-#blog .tabs li {
+#travel .tabs li {
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -887,7 +887,7 @@ body {
   padding: 0;
 }
 
-#blog .tabs a {
+#travel .tabs a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -900,16 +900,16 @@ body {
   transition: 0.5s;
 }
 
-#blog .tabs a:hover {
+#travel .tabs a:hover {
   color: #45489a;
 }
 
 
-#blog .tabs .active:hover {
+#travel .tabs .active:hover {
   color: #fff;
 }
 
-#blog .tabs .active {
+#travel .tabs .active {
   background-color: #45489a;
   color: #fff;
 }
@@ -925,13 +925,13 @@ body {
   clear:both;
 }
 
-#blog .tabgroup ul {
+#travel .tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#blog .tabgroup ul li {
+#travel .tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
@@ -939,23 +939,23 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-#blog .tabgroup ul li:last-child {
+#travel .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-#blog .tabgroup ul li img {
+#travel .tabgroup ul li img {
   float: left;
   margin-right: 30px;
   max-width: 100%;
   overflow: hidden;
 }
-#blog .tabgroup ul li .text-content {
+#travel .tabgroup ul li .text-content {
   display: inline;
 }
 
-#blog .item .text-content h4 {
+#travel .item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -965,7 +965,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-#blog .item .text-content span {
+#travel .item .text-content span {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
@@ -974,7 +974,7 @@ body {
   margin-bottom: 15px;
 }
 
-#blog .item .text-content .accent-button {
+#travel .item .text-content .accent-button {
   margin-top: 25px;
 }
 
@@ -1001,15 +1001,15 @@ body {
 
 /* Contact Style */
 
-#contact {
+#garden {
   padding-top: 0px;
 }
 
-#contact-content {
+#garden-content {
   padding: 80px 60px;
 }
 
-#contact input {
+#garden input {
   border-radius: 0px;
   padding-left: 15px;
   font-size: 13px;
@@ -1024,7 +1024,7 @@ body {
   margin-bottom: 25px;
 }
 
-#contact textarea {
+#garden textarea {
   border-radius: 0px;
   padding-left: 15px;
   padding-top: 10px;
@@ -1041,7 +1041,7 @@ body {
   margin-bottom: 25px;
 }
 
-#contact button {
+#garden button {
   font-size: 13px;
   border-radius: 0px;
   font-weight: 600;
@@ -1059,7 +1059,7 @@ body {
   transition: all 0.3s;
 }
 
-#contact button:hover {
+#garden button:hover {
   color: #232323;
   background-color: #f4f4f4;
 }
@@ -1206,25 +1206,25 @@ body {
     padding-right: 15px;
   }
 
-  #blog {
+  #travel {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #blog .tabs a {
+  #travel .tabs a {
     font-size: 13px;
   }
 
-  #blog .tabgroup ul li img {
+  #travel .tabgroup ul li img {
     float: none;
     width: 100%;
     margin-bottom: 15px;
   }
-  #blog .tabgroup ul li .text-content {
+  #travel .tabgroup ul li .text-content {
     display: block;
   }
 
-  #contact-content {
+  #garden-content {
     padding-left: 15px;
     padding-right: 15px;
   }
