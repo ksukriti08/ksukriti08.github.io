@@ -317,7 +317,7 @@ body {
 /* Sidebar Style */
 
 .sidebar-navigation {
-  width: 18.5%;
+  width: 15.5%;
   float: left;
   height: 100%;
   position: fixed;
@@ -327,7 +327,7 @@ body {
 
 .sidebar-navigation .logo {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 140px;
   line-height: 100px;
   background-color: #45489a;
