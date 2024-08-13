@@ -120,6 +120,19 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.timeline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.timeline-heading {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -204,6 +217,7 @@ body {
       text-align: left;
   }
 }
+
 
 /* Responsive Navigation */
 
