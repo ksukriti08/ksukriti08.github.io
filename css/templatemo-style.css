@@ -1337,7 +1337,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba(69, 72, 154, 0.8); /* Your preferred color with transparency */
+    background-color: rgba(69, 72, 154, 0.8); 
     color: white;
     padding: 10px;
     text-align: center;
