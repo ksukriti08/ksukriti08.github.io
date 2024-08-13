@@ -127,14 +127,14 @@ body {
 .timeline-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px; /* Reduced padding to decrease space */
+  padding: 10px 10px; /* Reduced padding to decrease space */
   text-align: center;
 }
 
 .timeline-heading {
   font-size: 36px;
   color: #4a4a8c;
-  margin-bottom: 20px; /* Reduced margin below heading */
+  margin-bottom: 10px; /* Reduced margin below heading */
   margin-top: 10px; /* Reduced margin above heading */
 }
 
