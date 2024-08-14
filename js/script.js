@@ -15,10 +15,20 @@ function openTrip(evt, tripName) {
     }
 
     // Show the selected tab content and add the "active" class to the clicked tab
-    document.getElementById(tripName).style.display = "block";
-    document.getElementById(tripName).classList.add("active");
+    var selectedTabContent = document.getElementById(tripName);
+    selectedTabContent.style.display = "block";
+    selectedTabContent.classList.add("active");
     evt.currentTarget.className += " active";
+
+    // Fix layout issue by triggering reflow (optional)
+    selectedTabContent.offsetHeight; // Trigger reflow
 }
+
+window.onload = function() {
+    // Ensure the first trip's tab content is shown on page load
+    document.querySelector('.tab-button.active').click();
+};
+
 
 function openModal(imgElement) {
     var modal = document.getElementById("modal");
