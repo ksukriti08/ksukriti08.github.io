@@ -1071,7 +1071,7 @@ body {
 
 
 
-/* Contact Style */
+/* Garden Style */
 
 #garden {
   padding-top: 0px;
@@ -1081,60 +1081,55 @@ body {
   padding: 80px 60px;
 }
 
-#garden input {
-  border-radius: 0px;
-  padding-left: 15px;
-  font-size: 13px;
-  color: #aaa;
-  background-color: #f4f4f4;
-  border: 1px solid #eee;
-  outline: none;
-  box-shadow: none;
-  line-height: 40px;
-  height: 40px;
-  width: 100%;
-  margin-bottom: 25px;
-}
-
-#garden textarea {
-  border-radius: 0px;
-  padding-left: 15px;
-  padding-top: 10px;
-  font-size: 13px;
-  color: #aaa;
-  background-color: #f4f4f4;
-  border: 1px solid #eee;
-  outline: none;
-  box-shadow: none;
-  height: 200px;
-  max-height: 250px;
-  width: 100%;
+.cute-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-width: 100%;
-  margin-bottom: 25px;
+  margin: auto;
 }
 
-#garden button {
-  font-size: 13px;
-  border-radius: 0px;
-  font-weight: 600;
-  color: #fff;
-  text-transform: capitalize;
-  background-color: #45489a;
-  display: inline-block;
-  height: 44px;
-  line-height: 24px;
-  outline: none;
-  box-shadow: none;
+.cute-photo-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cute-photo-item:hover {
+  transform: translateY(-5px);
+}
+
+.cute-photo-item img {
   width: 100%;
-  letter-spacing: 0.25px;
-  text-decoration: none;
-  transition: all 0.3s;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
-#garden button:hover {
-  color: #232323;
-  background-color: #f4f4f4;
+.cute-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(69, 72, 154, 0.75); /* Your preferred color with transparency */
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
+
+.cute-photo-item:hover .cute-caption {
+  opacity: 1;
+}
+
 
 
 
