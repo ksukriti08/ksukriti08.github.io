@@ -35,3 +35,18 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+function scrollLeft() {
+    const carousel = document.querySelector('.carousel');
+    carousel.scrollBy({
+        left: -150, // Adjust this value based on the width of your items
+        behavior: 'smooth'
+    });
+}
+
+function scrollRight() {
+    const carousel = document.querySelector('.carousel');
+    carousel.scrollBy({
+        left: 150, // Adjust this value based on the width of your items
+        behavior: 'smooth'
+    });
+}
