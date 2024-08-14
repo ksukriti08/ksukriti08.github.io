@@ -1110,17 +1110,17 @@ body {
 .carousel-wrapper {
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  scroll-behavior: smooth;
+  overflow: auto; /* Allows scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
   width: 100%;
   max-width: 600px; /* Adjust as needed */
   margin: 0 auto;
+  white-space: nowrap; /* Prevents wrapping of items */
 }
 
 .carousel {
   display: flex;
-  transition: transform 0.3s ease-in-out;
-  width: fit-content;
+  align-items: center; /* Center images vertically */
 }
 
 .cute-photo-item {
@@ -1129,6 +1129,7 @@ body {
   margin: 5px;
   text-align: center;
   position: relative;
+  display: inline-block; /* Ensures items align horizontally */
 }
 
 .cute-photo-item img {
