@@ -35,27 +35,29 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-let carousel = document.querySelector('.carousel');
+document.addEventListener('DOMContentLoaded', function() {
+    const gardenCarousel = document.querySelector('.cute-garden-gallery .carousel');
+    const scrollAmount = 165; // Width of each item + margin (150px + 15px)
 
-function scrollLeft() {
-    carousel.insertBefore(carousel.lastElementChild, carousel.firstElementChild);
-    carousel.style.transition = 'none';
-    carousel.style.transform = 'translateX(-150px)';
-    setTimeout(() => {
-        carousel.style.transition = 'transform 0.3s ease-in-out';
-        carousel.style.transform = 'translateX(0)';
-    }, 20);
-}
+    function scrollLeft() {
+        gardenCarousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    }
 
-function scrollRight() {
-    carousel.style.transition = 'transform 0.3s ease-in-out';
-    carousel.style.transform = 'translateX(-150px)';
-    setTimeout(() => {
-        carousel.style.transition = 'none';
-        carousel.style.transform = 'translateX(0)';
-        carousel.appendChild(carousel.firstElementChild);
-    }, 300);
-}
+    function scrollRight() {
+        gardenCarousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    // Assign these functions to the scroll buttons
+    document.querySelector('.cute-garden-gallery .scroll-button.left').onclick = scrollLeft;
+    document.querySelector('.cute-garden-gallery .scroll-button.right').onclick = scrollRight;
+});
+
 
 
 
