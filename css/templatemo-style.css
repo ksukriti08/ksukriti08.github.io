@@ -1045,81 +1045,59 @@ body {
 }
 
 .vacation-gallery {
-  position: relative;
-  max-width: 100%;
+  max-width: 800px;
   margin: auto;
   padding: 20px;
-  background-color: #ffffff; /* White background */
+  background-color: #fdfdfd;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.photo-item {
-  position: relative;
-  margin-right: 15px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.photo-item img {
-  width: 150px; /* Adjust size as needed */
-  height: auto;
-  display: block;
-  border-radius: 8px;
-}
-
-.caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Black semi-transparent background */
-  color: #ffffff; /* White text */
-  font-size: 14px;
-  padding: 8px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 0 0 8px 8px;
-}
-
-.photo-item:hover .caption {
-  opacity: 1;
 }
 
 .tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .tab-button {
-  background-color: #45489a; /* Purple background */
-  color: #ffffff; /* White text */
-  border: none;
+  background-color: #45489a;
+  color: white;
   padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
   margin: 0 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover, .tab-button.active {
+  background-color: #6466c1;
+}
+
+.trip-content {
+  display: none;
+}
+
+.trip-content.active {
+  display: block;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+  padding: 10px;
+}
+
+.carousel img {
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.tab-button.active {
-  background-color: #ffffff; /* White background for active tab */
-  color: #45489a; /* Purple text for active tab */
+.carousel img:hover {
+  transform: scale(1.05);
 }
-
-.tab-button:hover {
-  background-color: #ffffff; /* White background on hover */
-  color: #45489a; /* Purple text on hover */
-}
-
 
 
 
@@ -1215,7 +1193,6 @@ body {
 .scroll-button:hover {
   background-color: #45489a; /* Purple on hover */
 }
-
 
 
 
