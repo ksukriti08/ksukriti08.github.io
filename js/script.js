@@ -47,25 +47,16 @@ function closeModal() {
 
 function scrollLeft(button) {
     const gallery = button.closest('.cute-garden-gallery');
-    const carouselWrapper = gallery.querySelector('.carousel-wrapper');
-    if (carouselWrapper) {
-        carouselWrapper.scrollBy({
-            left: -150,
-            behavior: 'smooth'
-        });
-    }
+    const carousel = gallery.querySelector('.carousel-wrapper');
+    carousel.scrollLeft -= 150;
 }
 
 function scrollRight(button) {
     const gallery = button.closest('.cute-garden-gallery');
-    const carouselWrapper = gallery.querySelector('.carousel-wrapper');
-    if (carouselWrapper) {
-        carouselWrapper.scrollBy({
-            left: 150,
-            behavior: 'smooth'
-        });
-    }
+    const carousel = gallery.querySelector('.carousel-wrapper');
+    carousel.scrollLeft += 150;
 }
+
 
 
 
