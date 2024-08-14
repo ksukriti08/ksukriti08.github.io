@@ -940,133 +940,59 @@ body {
   padding-bottom: 80px;
 }
 
-#travel .tabs {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  height: 90px;
-  width: 100%;
-  background-color: #eee;
-  border-bottom: 10px solid #45489a;
+.vacation-gallery {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#travel .tabs li {
-  display: inline-block;
-  text-align: center;
-  width: 25%;
-  float: left;
-  margin: 0;
-  padding: 0;
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-#travel .tabs a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  color: #232323;
-  font-size: 19px;
-  line-height: 80px;
-  font-weight: 600;
-  transition: 0.5s;
-}
-
-#travel .tabs a:hover {
-  color: #45489a;
-}
-
-
-#travel .tabs .active:hover {
-  color: #fff;
-}
-
-#travel .tabs .active {
+.tab-button {
   background-color: #45489a;
-  color: #fff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.tabgroup {
-  background-color: #f4f4f4;
-  padding: 20px 30px;
+.tab-button:hover, .tab-button.active {
+  background-color: #6466c1;
 }
 
-.clearfix:after {
-  content:"";
-  display:table;
-  clear:both;
+.trip-content {
+  display: none;
 }
 
-#travel .tabgroup ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.trip-content.active {
+  display: block;
 }
 
-#travel .tabgroup ul li {
-  display: inline-block;
-  text-align: left;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+  padding: 10px;
 }
 
-#travel .tabgroup ul li:last-child {
-  border-bottom: none;
-  margin-bottom: 0px;
-  padding-bottom: 10px;
+.carousel img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-#travel .tabgroup ul li img {
-  float: left;
-  margin-right: 30px;
-  max-width: 100%;
-  overflow: hidden;
-}
-#travel .tabgroup ul li .text-content {
-  display: inline;
-}
-
-#travel .item .text-content h4 {
-  padding-top: 7.5px;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 21px;
-  font-weight: 600;
-  color: #232323;
-  letter-spacing: 0.5px;
-}
-
-#travel .item .text-content span {
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  color: #7a7a7a;
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
-}
-
-#travel .item .text-content .accent-button {
-  margin-top: 25px;
-}
-
-#my-video-box {
-  width: 306px;
-  height: 360px;
-  overflow: hidden; /* Ensures that any overflow is hidden */
-  position: relative; /* Creates a containing block for absolute positioning */
-}
-
-#my-video-box video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: 100%; /* Ensures the video height fills the container */
-  transform: translate(-50%, -50%); /* Centers the video in the container */
-  min-width: 100%; /* Ensures the video width fills the container */
-  min-height: 100%; /* Ensures the video height fills the container */
-  object-fit: cover; /* Ensures the video covers the container without stretching */
+.carousel img:hover {
+  transform: scale(1.05);
 }
 
 
