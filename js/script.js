@@ -35,18 +35,25 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+let carousel = document.querySelector('.carousel');
+
 function scrollLeft() {
-    const carousel = document.querySelector('.carousel');
-    carousel.scrollBy({
-        left: -150, // Adjust this value based on the width of your items
-        behavior: 'smooth'
-    });
+    carousel.insertBefore(carousel.lastElementChild, carousel.firstElementChild);
+    carousel.style.transition = 'none';
+    carousel.style.transform = 'translateX(-150px)';
+    setTimeout(() => {
+        carousel.style.transition = 'transform 0.3s ease-in-out';
+        carousel.style.transform = 'translateX(0)';
+    }, 20);
 }
 
 function scrollRight() {
-    const carousel = document.querySelector('.carousel');
-    carousel.scrollBy({
-        left: 150, // Adjust this value based on the width of your items
-        behavior: 'smooth'
-    });
+    carousel.style.transition = 'transform 0.3s ease-in-out';
+    carousel.style.transform = 'translateX(-150px)';
+    setTimeout(() => {
+        carousel.style.transition = 'none';
+        carousel.style.transform = 'translateX(0)';
+        carousel.appendChild(carousel.firstElementChild);
+    }, 300);
 }
+
