@@ -1045,59 +1045,81 @@ body {
 }
 
 .vacation-gallery {
-  max-width: 800px;
+  position: relative;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.photo-item {
+  position: relative;
+  margin-right: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item img {
+  width: 150px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0 0 8px 8px;
+}
+
+.photo-item:hover .caption {
+  opacity: 1;
 }
 
 .tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .tab-button {
   background-color: #45489a;
-  color: white;
-  padding: 10px 20px;
+  color: #ffffff;
   border: none;
-  border-radius: 8px;
+  padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.tab-button:hover, .tab-button.active {
-  background-color: #6466c1;
-}
-
-.trip-content {
-  display: none;
-}
-
-.trip-content.active {
-  display: block;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: scroll;
-  gap: 15px;
-  padding: 10px;
-}
-
-.carousel img {
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-.carousel img:hover {
-  transform: scale(1.05);
+.tab-button.active {
+  background-color: #ffffff;
+  color: #45489a;
 }
+
+.tab-button:hover {
+  background-color: #ffffff;
+  color: #45489a;
+}
+
 
 
 
