@@ -276,6 +276,29 @@ https://templatemo.com/tm-518-sentra
                 </div>
             </section>
             <section id="projects" class="content-section">
+                <div class="project-gallery">
+                    <div class="project-item">
+                        <img src="\img\project1.jpg" alt="Project 1" onclick="openModal(this)">
+                        <div class="project-caption">Project 1: Website Redesign</div>
+                    </div>
+                    <div class="project-item">
+                        <img src="\img\project2.jpg" alt="Project 2" onclick="openModal(this)">
+                        <div class="project-caption">Project 2: Mobile App Development</div>
+                    </div>
+                    <div class="project-item">
+                        <img src="\img\project3.jpg" alt="Project 3" onclick="openModal(this)">
+                        <div class="project-caption">Project 3: E-commerce Platform</div>
+                    </div>
+                    <!-- Add more projects as needed -->
+                </div>
+                
+                <!-- Modal for Enlarged Image -->
+                <div id="modal" class="modal" onclick="closeModal()">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-img">
+                    <div id="modal-caption"></div>
+                </div>
+                
             </section>
             <section id="travel" class="content-section">
                 <div class="section-heading">
@@ -318,7 +341,6 @@ https://templatemo.com/tm-518-sentra
                         </div>
                     </div>
                 </div>
-                <script src="/js/script.js"></script>
             </section>
             <section id="garden" class="garden-section">
                 <!-- <div id="map">
@@ -417,8 +439,9 @@ https://templatemo.com/tm-518-sentra
             lastScrollTop = st;
         }
     </script>
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/script.js"></script>
 
 </body>
+
 </html>

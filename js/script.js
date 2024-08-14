@@ -19,3 +19,19 @@ function openTrip(evt, tripName) {
     document.getElementById(tripName).classList.add("active");
     evt.currentTarget.className += " active";
 }
+
+function openModal(imgElement) {
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("modal-img");
+    var captionText = document.getElementById("modal-caption");
+
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    captionText.innerHTML = imgElement.nextElementSibling.innerHTML;
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+
