@@ -1104,6 +1104,7 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 20px; /* Adds space between galleries */
 }
 
 .carousel-wrapper {
@@ -1123,10 +1124,16 @@ body {
 }
 
 .cute-photo-item {
-  min-width: 150px;
-  max-width: 150px;
+  min-width: 120px; /* Smaller size for cuteness */
+  max-width: 120px;
   margin: 5px;
   text-align: center;
+  position: relative;
+}
+
+.cute-photo-item img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .cute-caption {
@@ -1139,6 +1146,7 @@ body {
   text-align: center;
   padding: 5px;
   box-sizing: border-box;
+  border-radius: 0 0 8px 8px;
 }
 
 .cute-photo-item:hover .cute-caption {
