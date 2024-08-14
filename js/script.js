@@ -35,25 +35,21 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-let carousel = document.querySelector('.carousel');
+const carousel = document.querySelector('.carousel');
+const scrollAmount = 165; // Adjust this based on item width + margin (150px + 15px)
 
 function scrollLeft() {
-    carousel.insertBefore(carousel.lastElementChild, carousel.firstElementChild);
-    carousel.style.transition = 'none';
-    carousel.style.transform = 'translateX(-150px)';
-    setTimeout(() => {
-        carousel.style.transition = 'transform 0.3s ease-in-out';
-        carousel.style.transform = 'translateX(0)';
-    }, 20);
+    carousel.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+    });
 }
 
 function scrollRight() {
-    carousel.style.transition = 'transform 0.3s ease-in-out';
-    carousel.style.transform = 'translateX(-150px)';
-    setTimeout(() => {
-        carousel.style.transition = 'none';
-        carousel.style.transform = 'translateX(0)';
-        carousel.appendChild(carousel.firstElementChild);
-    }, 300);
+    carousel.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
 }
+
 
