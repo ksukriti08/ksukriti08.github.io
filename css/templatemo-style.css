@@ -1014,13 +1014,14 @@ body {
   background-color: #fdfdfd;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
 }
 
 .carousel-wrapper {
   overflow-x: auto;
+  white-space: nowrap;
   scroll-snap-type: x mandatory;
-  display: flex;
-  gap: 15px; /* Spacing between items */
+  -webkit-overflow-scrolling: touch;
 }
 
 .carousel {
@@ -1030,16 +1031,14 @@ body {
 
 .cute-photo-item {
   flex: 0 0 150px;
+  position: relative;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   scroll-snap-align: start;
   transition: transform 0.2s ease-in-out;
-}
-
-.cute-photo-item:hover {
-  transform: translateY(-5px);
+  background-color: #fff;
 }
 
 .cute-photo-item img {
@@ -1050,10 +1049,32 @@ body {
 }
 
 .cute-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 14px;
   padding: 8px;
-  font-size: 12px;
-  color: #45489a; /* Your preferred color */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0 0 8px 8px;
 }
+
+.cute-photo-item:hover .cute-caption {
+  opacity: 1;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb {
+  background-color: #45489a; /* Your preferred color */
+  border-radius: 4px;
+}
+
 
 
 
