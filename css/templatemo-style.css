@@ -1044,47 +1044,39 @@ body {
   padding-bottom: 80px;
 }
 
-.vacation-tabs {
+.vacation-gallery .tabs {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.vacation-tabs .tab-button {
-  background-color: #45489a; /* Your preferred purple color */
-  color: white;
+.vacation-gallery .tab-button {
+  background-color: #45489a;
   border: none;
+  color: white;
   padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px 5px 0 0;
   margin: 0 5px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.vacation-tabs .tab-button:hover {
-  background-color: #35368a; /* Darker shade on hover */
+.vacation-gallery .tab-button:hover {
+  background-color: #6c6fcd;
+  transform: scale(1.05);
 }
 
-.vacation-tabs .tab-button.active {
-  background-color: #ffffff; /* White for the active tab */
-  color: #45489a; /* Purple text for the active tab */
-  border: 1px solid #45489a;
-  border-bottom: none; /* Seamless with the content */
+.vacation-gallery .tab-button.active {
+  background-color: #2e2f72;
+  font-weight: bold;
+  transform: scale(1.1);
 }
 
-.trip-content {
-  border: 1px solid #45489a;
-  padding: 20px;
-  border-radius: 0 5px 5px 5px;
-  background-color: white;
-  display: none; /* Hidden by default */
+.vacation-gallery .tab-button:focus {
+  outline: none;
 }
 
-.trip-content.active {
-  display: block; /* Show the active tab */
-}
 
 
 
