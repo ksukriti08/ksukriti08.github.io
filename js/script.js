@@ -45,17 +45,22 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+let scrollPosition = 0;
+const scrollAmount = 150;
+
 function scrollLeft() {
-    document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
-        wrapper.scrollLeft -= 150;
-    });
+    const carousel = document.querySelector('.cute-garden-gallery .carousel');
+    scrollPosition = Math.max(scrollPosition - scrollAmount, 0);
+    carousel.style.transform = `translateX(-${scrollPosition}px)`;
 }
 
 function scrollRight() {
-    document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
-        wrapper.scrollLeft += 150;
-    });
+    const carousel = document.querySelector('.cute-garden-gallery .carousel');
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    scrollPosition = Math.min(scrollPosition + scrollAmount, maxScroll);
+    carousel.style.transform = `translateX(-${scrollPosition}px)`;
 }
+
 
 
 
