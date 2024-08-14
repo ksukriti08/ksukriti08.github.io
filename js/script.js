@@ -36,20 +36,28 @@ function closeModal() {
 }
 
 const carousel = document.querySelector('.carousel');
-const scrollAmount = 165; // Adjust this based on item width + margin (150px + 15px)
+document.addEventListener('DOMContentLoaded', function() {
+    const gardenCarousel = document.querySelector('.cute-garden-gallery .carousel');
+    const scrollAmount = 165; // Width of each item + margin (150px + 15px)
 
-function scrollLeft() {
-    carousel.scrollBy({
-        left: -scrollAmount,
-        behavior: 'smooth'
-    });
-}
+    function scrollLeft() {
+        gardenCarousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    }
 
-function scrollRight() {
-    carousel.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth'
-    });
-}
+    function scrollRight() {
+        gardenCarousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    // Assign these functions to the scroll buttons
+    document.querySelector('.cute-garden-gallery .scroll-button.left').onclick = scrollLeft;
+    document.querySelector('.cute-garden-gallery .scroll-button.right').onclick = scrollRight;
+});
+
 
 
