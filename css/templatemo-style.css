@@ -988,6 +988,12 @@ body {
   z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .video-container {
+      height: 300px; /* Adjust the height as needed for smaller screens */
+  }
+}
+
 .box-video .video-container{
   position: relative;
   margin: 0;
