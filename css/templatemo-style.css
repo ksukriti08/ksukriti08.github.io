@@ -1051,6 +1051,7 @@ body {
   padding-bottom: 80px;
 }
 
+./* Vacation Gallery Tabs */
 .vacation-gallery .tabs {
   display: flex;
   justify-content: center;
@@ -1083,6 +1084,63 @@ body {
 .vacation-gallery .tab-button:focus {
   outline: none;
 }
+
+/* Carousel Styling */
+.vacation-gallery .trip-content .carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.vacation-gallery .trip-content .carousel .photo-item {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  position: relative;
+}
+
+.vacation-gallery .trip-content .carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.vacation-gallery .trip-content .carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure only one row of images by default */
+.vacation-gallery .trip-content {
+  display: none;
+}
+
+.vacation-gallery .trip-content.active {
+  display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .vacation-gallery .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vacation-gallery .tab-button {
+    margin: 10px 0;
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .vacation-gallery .trip-content .carousel {
+    flex-direction: column;
+  }
+
+  .vacation-gallery .trip-content .carousel .photo-item {
+    margin-bottom: 15px;
+  }
+}
+
 
 
 
