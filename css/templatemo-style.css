@@ -1051,7 +1051,7 @@ body {
   padding-bottom: 80px;
 }
 
-./* Vacation Gallery Tabs */
+/* Vacation Gallery Tabs */
 .vacation-gallery .tabs {
   display: flex;
   justify-content: center;
@@ -1086,6 +1086,14 @@ body {
 }
 
 /* Carousel Styling */
+.vacation-gallery .trip-content {
+  display: none; /* Hide all content by default */
+}
+
+.vacation-gallery .trip-content.active {
+  display: block;
+}
+
 .vacation-gallery .trip-content .carousel {
   display: flex;
   flex-wrap: nowrap;
@@ -1110,15 +1118,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Ensure only one row of images by default */
-.vacation-gallery .trip-content {
-  display: none;
-}
-
-.vacation-gallery .trip-content.active {
-  display: block;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .vacation-gallery .tabs {
@@ -1140,6 +1139,7 @@ body {
     margin-bottom: 15px;
   }
 }
+
 
 
 

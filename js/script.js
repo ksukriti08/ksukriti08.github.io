@@ -22,8 +22,11 @@ function openTrip(evt, tripName) {
 
 // Ensure the first trip's content is visible on load
 window.onload = function() {
-    document.getElementsByClassName('tab-button')[0].click();
+    document.getElementById('trip1').style.display = 'block';
+    document.getElementById('trip1').classList.add('active');
+    document.getElementsByClassName('tab-button')[0].classList.add('active');
 };
+
 
 
 
