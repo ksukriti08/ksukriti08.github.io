@@ -432,25 +432,23 @@ body {
 
 .sidebar-navigation .social-icons {
   position: absolute;
-  width: 100%;  
+  width: auto; /* Changed from 100% to auto for bottom left alignment */
   bottom: 10px;
+  left: 10px; /* Added to align the icon to the left */
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: left; /* Adjusted alignment */
 }
 
 .sidebar-navigation .social-icons li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.sidebar-navigation .social-icons li:last-child {
-  margin-right: 0px;
-}
 
 .sidebar-navigation .social-icons li a {
-  font-size: 18px;
+  font-size: 24px; /* Increased size for better visibility */
   color: #fff;
   transition: all 0.5s;
 }
@@ -458,6 +456,7 @@ body {
 .sidebar-navigation .social-icons li a:hover {
   color: #45489a;
 }
+
 
 
 /* Slider Style */
