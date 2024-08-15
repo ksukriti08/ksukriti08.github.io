@@ -124,6 +124,11 @@ body {
   padding: 0;
 }
 
+/* General Styles */
+.content-section {
+  padding: 50px 20px;
+}
+
 .timeline-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -202,6 +207,7 @@ body {
   margin: 0;
 }
 
+/* Vertical Line for Timeline */
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -222,6 +228,7 @@ body {
   left: calc(50% + 37px); /* Adjusted to accommodate the icon margin */
 }
 
+/* Responsive Styles for Phones */
 @media screen and (max-width: 768px) {
   .timeline-item {
       flex-direction: column;
@@ -243,11 +250,12 @@ body {
       left: 50%;
       transform: translateX(-50%);
   }
-  
+
   .timeline-content {
       width: 100%;
   }
 }
+
 
 
 
