@@ -942,25 +942,28 @@ body {
   font-size: 18px;
 }
 
-/* Modal Content Style */
-.modal h2 {
-  margin-bottom: 20px;
+.modal-caption h2 {
+  color: #ffffff; /* Title heading in white */
+  margin-bottom: 10px;
 }
 
 .modal-caption ul {
   list-style-type: disc;
-  margin: 0;
-  padding: 10px 20px;
-  text-align: left;
+  margin-left: 20px;
+  padding-left: 0;
+  color: #ffffff; /* Bullet points in white */
 }
 
-.modal-caption li {
-  margin-bottom: 10px;
+.modal-caption ul li {
+  margin-bottom: 5px;
+  color: #ffffff; /* Bullet point text in white */
 }
 
 .modal-caption p {
-  margin: 0;
+  margin: 5px 0;
+  color: #ffffff; /* Paragraph text in white */
 }
+
 
 
 
