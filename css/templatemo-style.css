@@ -893,7 +893,6 @@ body {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding-top: 30px;
   left: 0;
   top: 0;
   width: 100%;
@@ -903,14 +902,22 @@ body {
 }
 
 .modal-content {
+  position: relative; /* Ensure modal-content is positioned relative to its container */
   margin: auto;
-  display: block;
-  max-width: 80%;
-  max-height: 80%;
+  width: 600px; /* Fixed width */
+  height: 400px; /* Fixed height */
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(69,72,154, 0.9);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(69, 72, 154, 0.9);
+  background-color: #333; /* Background color for content area */
   color: #fff;
+  overflow: hidden; /* Ensure content fits within modal */
+}
+
+.modal-content img {
+  width: 100%; /* Full width within the modal-content */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Adjust height if needed */
+  object-fit: contain; /* Ensure the image fits without distortion */
 }
 
 .modal-content:hover {
@@ -919,8 +926,8 @@ body {
 
 .close {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   color: #ffffff;
   font-size: 40px;
   font-weight: bold;
@@ -935,11 +942,11 @@ body {
   cursor: pointer;
 }
 
-#modal-caption {
+.modal-caption {
   text-align: left;
   color: #ffffff;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 16px; /* Adjust font size if needed */
 }
 
 .modal-caption h2 {
@@ -964,6 +971,7 @@ body {
   margin: 5px 0;
   color: #ffffff; /* Paragraph text in white */
 }
+
 
 
 
