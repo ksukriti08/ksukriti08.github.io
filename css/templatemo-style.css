@@ -951,6 +951,7 @@ body {
   list-style-type: disc;
   margin-left: 20px;
   padding-left: 0;
+  text-align: left;
   color: #ffffff; /* Bullet points in white */
 }
 
