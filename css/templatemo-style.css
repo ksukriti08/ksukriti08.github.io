@@ -908,7 +908,7 @@ body {
   max-width: 80%;
   max-height: 80%;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(69,72,154, 0.9);
   transition: all 0.3s ease-in-out;
 }
 
