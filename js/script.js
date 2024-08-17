@@ -57,7 +57,13 @@ function scrollRight(button) {
     carouselWrapper.scrollLeft += 150;
 }
 
-
+document.querySelectorAll('.research-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const desc = item.querySelector('.description');
+      desc.style.opacity = desc.style.opacity === '1' ? '0' : '1';
+    });
+  });
+  
 
 
 
