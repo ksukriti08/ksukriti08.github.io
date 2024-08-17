@@ -310,7 +310,7 @@ https://templatemo.com/tm-518-sentra
                         <div class="project-caption">Project 2: Mobile App Development</div>
                     </div>
                     <div class="project-item">
-                        <img src="\img\portfolio_2.jpg" alt="Project 3" onclick="openModal(this)">
+                        <img src="\img\2002_1.jpg" alt="Project 3" onclick="openModal(this)">
                         <div class="project-caption">Project 3: E-commerce Platform</div>
                     </div>
                     <div class="project-item">
@@ -328,13 +328,36 @@ https://templatemo.com/tm-518-sentra
                     <!-- Add more projects as needed -->
                 </div>
                 
-                <!-- Modal for Enlarged Image -->
-                <div id="modal" class="modal" onclick="closeModal()">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="modal-img">
-                    <div id="modal-caption"></div>
+            <!-- Modal for Project 1 -->
+            <div id="project1" class="modal">
+                <span class="close" onclick="closeModal('project1')">&times;</span>
+                <img class="modal-img" src="\img\2001_2.jpg" alt="Project 1">
+                <div class="modal-caption">
+                    <h2>Project 1: Website Redesign</h2>
+                    <p>Detailed information about the Website Redesign project. This project involved a complete overhaul of the client’s website to improve user experience and accessibility.</p>
                 </div>
-                
+            </div>
+
+            <!-- Modal for Project 2 -->
+            <div id="project2" class="modal">
+                <span class="close" onclick="closeModal('project2')">&times;</span>
+                <img class="modal-img" src="\img\3001.jpg" alt="Project 2">
+                <div class="modal-caption">
+                    <h2>Project 2: Mobile App Development</h2>
+                    <p>This project focused on creating a mobile application for both iOS and Android platforms, aimed at providing users with seamless access to services on the go.</p>
+                </div>
+            </div>
+
+            <!-- Modal for Project 3 -->
+            <div id="project3" class="modal">
+                <span class="close" onclick="closeModal('project3')">&times;</span>
+                <img class="modal-img" src="\img\2002_1.jpg" alt="Project 3">
+                <div class="modal-caption">
+                    <h2>Project 3: E-commerce Platform</h2>
+                    <p>This project involved building a robust e-commerce platform with features like shopping cart integration, payment processing, and customer management.</p>
+                </div>
+            </div>
+</section>
             </section>
             <section id="travel" class="content-section">
                 <div class="section-heading">
