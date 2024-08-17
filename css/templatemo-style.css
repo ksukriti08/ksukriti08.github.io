@@ -942,6 +942,27 @@ body {
   font-size: 18px;
 }
 
+/* Modal Content Style */
+.modal h2 {
+  margin-bottom: 20px;
+}
+
+.modal-caption ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.modal-caption li {
+  margin-bottom: 10px;
+}
+
+.modal-caption p {
+  margin: 0;
+}
+
+
 
 
 
