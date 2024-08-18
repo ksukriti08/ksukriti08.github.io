@@ -814,7 +814,7 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for a more responsive layout */
   gap: 20px;
   justify-content: center;
 }
@@ -833,9 +833,14 @@ body {
 
 .project-image {
   width: 100%;
-  height: 500px; /* Set a fixed height for uniformity */
-  /* object-fit: cover; Crop or scale image to fit container */
+  height: 450px; /* Adjusted height for uniformity with the travel section */
+  object-fit: cover; /* Ensures images fill the container without distortion */
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.05); /* Adds a slight zoom effect on hover */
 }
 
 .description {
@@ -843,16 +848,16 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   opacity: 0;
-  height: 100%;
   transition: opacity 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: left;
+  height: 100%; /* Ensure description takes full height */
 }
 
 .project-item:hover .description {
@@ -868,11 +873,14 @@ body {
 
 .description h3 {
   margin-top: 0;
+  font-size: 1.2rem;
 }
 
 .description p {
   margin-bottom: 0;
+  font-size: 0.9rem;
 }
+
 
 
 /* Research Section Styling */
