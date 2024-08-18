@@ -323,63 +323,30 @@ https://templatemo.com/tm-518-sentra
             </section>
             <section id="projects" class="content-section">
                 <div class="section-heading">
-                <h1>Engineering<br><em>Projects</em></h1>
+                  <h1>Engineering<br><em>Projects</em></h1>
                 </div>
-                <div class="project-gallery">
-                    <div class="project-item" onclick="openModal('project1')">
-                        <div class="project-caption">Robotic Replacement of Solar Collector Panels</div>
-                        <img src="\img\2001_2.jpg" alt="Project 1">
+                <div class="projects-grid">
+                  <div class="project-item" onclick="openModal('project1')">
+                    <img src="\img\2001_2.jpg" alt="Project 1" class="project-image">
+                    <div class="description">
+                      <h3>Robotic Replacement of Solar Collector Panels</h3>
+                      <p>Created four-bar linkage structures with the ability to support and transport solar panel models. Designed and analyzed motion studies of servo-actuated grippers on SolidWorks for robot construction.</p>
                     </div>
-                    <div class="project-item" onclick="openModal('project2')">
-                        <div class="project-caption">Trajectory Generation of 4-DOF Robotics Manipulator</div>
-                        <img src="\img\3001.jpg" alt="Project 2">
+                  </div>
+                  <div class="project-item" onclick="openModal('project2')">
+                    <img src="\img\3001.jpg" alt="Project 2" class="project-image">
+                    <div class="description">
+                      <h3>Trajectory Generation of 4-DOF Robotics Manipulator</h3>
+                      <p>Employed MATLAB to calculate the forward and inverse kinematics of a 4-degree robot arm. Conducted image segmentation and object recognition using HSV color masks to identify colored balls.</p>
                     </div>
-                    <div class="project-item" onclick="openModal('project3')">
-                        <div class="project-caption">Escape Room</div>
-                        <img src="\img\2002_1.jpg" alt="Project 3">
+                  </div>
+                  <div class="project-item" onclick="openModal('project3')">
+                    <img src="\img\2002_1.jpg" alt="Project 3" class="project-image">
+                    <div class="description">
+                      <h3>Escape Room</h3>
+                      <p>Programmed Romi 32U4 robots to escape from a grid-based maze. Implemented hysteresis control, PID tuning, sensor fusion, and MQTT protocol for robot-robot communication.</p>
                     </div>
-                    <!-- Add more projects as needed -->
-                </div>
-            
-                <!-- Modal for Project 1 -->
-                <div id="project1" class="modal">
-                    <span class="close" onclick="closeModal('project1')">&times;</span>
-                    <div class="modal-caption">
-                        <h2>Robotic Replacement of Solar Collector Panels</h2>
-                        <img class="modal-img" src="\img\2001_2.jpg" alt="Project 1">
-                        <ul>
-                            <li>Created four-bar linkage structures with the ability to support and transport solar panel models.</li>
-                            <li>Designed and analyzed motion studies of servo-actuated grippers on SolidWorks for robot construction.</li>
-                        </ul>
-                    </div>
-                </div>
-            
-                <!-- Modal for Project 2 -->
-                <div id="project2" class="modal">
-                    <span class="close" onclick="closeModal('project2')">&times;</span>
-                    <div class="modal-caption">
-                        <h2>Trajectory Generation of 4-DOF Robotics Manipulator</h2>
-                        <img class="modal-img" src="\img\3001.jpg" alt="Project 2">
-                        <ul>
-                            <li>Employed MATLAB to calculate the forward and inverse kinematics of a 4-degree robot arm, enabling precise mapping of joint movements in the task space to efficiently grasp objects.</li>
-                            <li>Conducted image segmentation and object recognition by applying HSV color masks to identify colored balls.</li>
-                        </ul>
-                    </div>
-                </div>
-            
-                <!-- Modal for Project 3 -->
-                <div id="project3" class="modal">
-                    <span class="close" onclick="closeModal('project3')">&times;</span>
-                    <div class="modal-caption">
-                        <h2>Escape Room</h2>
-                        <img class="modal-img" src="\img\2002_1.jpg" alt="Project 3">
-                        <ul>
-                            <li>Programmed a set of Romi 32U4 robots to work together to escape from a grid-based maze </li>
-                            <li>On board sensors included ultrasonic rangefinders, IR position finder, Open MV camera, IMU, and IR emitter.</li>
-                            <li>Implemented hysteresis control, PID tuning, and sensor fusion to optimize sensor performance.</li>
-                            <li>Established MQTT protocol to support robot-robot communication.</li>
-                        </ul>
-                    </div>
+                  </div>
                 </div>
             </section>
             <!-- Research Section -->
