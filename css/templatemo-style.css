@@ -133,35 +133,46 @@ body {
 .timeline-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px; /* Reduced padding to decrease space */
+  padding: 10px 20px;
   text-align: center;
 }
 
 .timeline-heading {
   font-size: 36px;
   color: #45489a;
-  margin-bottom: 20px; /* Reduced margin below heading */
-  margin-top: 10px; /* Reduced margin above heading */
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .timeline {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 10px 0; /* Reduced top and bottom padding */
-  display: flex; /* Added to allow horizontal scrolling */
-  overflow-x: auto; /* Allows horizontal scrolling */
-  white-space: nowrap; /* Prevents items from wrapping to the next line */
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.timeline::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background-color: #45489a;
+  border-radius: 4px;
 }
 
 .timeline-item {
-  display: inline-flex; /* Keeps items in a horizontal line */
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 40px; /* Space between timeline items */
   position: relative;
-  z-index: 1; /* Ensure the timeline items stay above the line */
-  width: 300px; /* Fixed width to ensure uniform size */
+  margin-right: 20px;
+  z-index: 2;
+  width: 300px; /* Adjust width to make text fit better */
+}
+
+.timeline-item:last-child {
+  margin-right: 0;
 }
 
 .timeline-icon {
@@ -174,22 +185,25 @@ body {
   justify-content: center;
   border-radius: 50%;
   font-size: 24px;
-  margin-right: 20px;
-  z-index: 2; /* Ensure the icon stays above the line */
+  position: absolute;
+  top: 50%;
+  left: -25px; /* Adjust to position the icon */
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
 .timeline-content {
   background-color: #fff;
-  padding: 20px 30px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Adjusted to fit inside the timeline item */
+  width: 100%;
 }
 
 .timeline-content h3 {
   margin-top: 0;
   color: #45489a;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .timeline-content span {
@@ -199,53 +213,37 @@ body {
   margin-bottom: 10px;
 }
 
-.timeline-content ul {
-  padding-left: 20px;
-  margin-top: 0;
+.timeline-content p {
+  margin: 0;
 }
 
-.timeline-content ul li {
-  margin-bottom: 5px;
-}
-
-/* Horizontal Line for Timeline */
-.timeline::before {
+/* Line Between Boxes */
+.timeline-item::before {
   content: '';
   position: absolute;
-  width: 100%;
   height: 4px;
   background-color: #45489a;
   top: 50%;
-  left: 0;
-  z-index: 0; /* Keep the line below the icons and content */
+  left: 100%;
+  width: 20px;
+  z-index: 1;
 }
 
-/* Responsive Styles for Phones */
+.timeline-item:last-child::before {
+  display: none; /* Remove line after the last item */
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .timeline {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .timeline-item {
-    margin-right: 0;
-    margin-bottom: 20px;
-    width: 100%; /* Adjust width for mobile view */
+      width: 90%;
+      margin-right: 10px;
   }
 
-  .timeline-content {
-    width: 100%;
-  }
-
-  .timeline::before {
-    display: none; /* Hide the line on mobile devices */
+  .timeline-item::before {
+      display: none; /* Remove lines on mobile for cleaner look */
   }
 }
-
-
-
-
-
 
 
 
