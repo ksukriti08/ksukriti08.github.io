@@ -236,6 +236,10 @@ body {
   display: none; /* Remove line after the last item */
 }
 
+.timeline-item:first-child .timeline-icon {
+  display: none;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .timeline-item {
