@@ -130,6 +130,7 @@ body {
 }
 
 
+
 .timeline-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -175,7 +176,7 @@ body {
   margin-right: 0;
 }
 
-.timeline-icon {
+.timeline-item:not(:first-child) .timeline-icon {
   background-color: #45489a;
   color: #fff;
   width: 50px;
@@ -198,12 +199,14 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
+  text-align: left; /* Align text to the left */
 }
 
 .timeline-content h3 {
   margin-top: 0;
   color: #45489a;
   font-size: 22px;
+  text-align: center; /* Keep heading centered */
 }
 
 .timeline-content span {
