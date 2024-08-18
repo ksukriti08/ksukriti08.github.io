@@ -1124,11 +1124,14 @@ body {
   flex: 0 0 auto;
   margin-right: 10px;
   position: relative;
+  width: 250px; /* Fixed width */
+  height: 150px; /* Fixed height */
 }
 
 .vacation-gallery .trip-content .carousel img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Make the image fit the photo-item */
+  height: 100%; /* Make the image fit the photo-item */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
