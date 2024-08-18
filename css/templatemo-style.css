@@ -821,7 +821,7 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for a more responsive layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for uniform container size */
   gap: 20px;
   justify-content: center;
 }
@@ -832,6 +832,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
+  height: 350px; /* Set a fixed height for uniformity */
 }
 
 .project-item:hover {
@@ -839,10 +840,9 @@ body {
 }
 
 .project-image {
-  object-fit: cover; 
-  /* transition: transform 0.3s ease; */
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%; /* Ensure the image fills the container */
   display: block;
 }
 
