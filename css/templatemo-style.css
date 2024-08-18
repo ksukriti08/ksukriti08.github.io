@@ -219,7 +219,7 @@ body {
 .timeline-content p {
   margin: 0;
   color: #080606;
-  
+
 
 }
 
@@ -839,9 +839,8 @@ body {
 }
 
 .project-image {
-  /* object-fit: cover; Ensures images fill the container without distortion */
+  object-fit: cover; 
   /* transition: transform 0.3s ease; */
-
   width: 100%;
   height: auto;
   display: block;
