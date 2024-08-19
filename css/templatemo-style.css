@@ -903,7 +903,7 @@ body {
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increase min-width for larger images */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
 }
@@ -914,12 +914,6 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
-  height: 300px; /* Fixed height to ensure uniformity across items */
-}
-
-.research-item:nth-child(2), /* Targeting the second and third items */
-.research-item:nth-child(3) {
-  height: 350px; /* Increase height for larger images */
 }
 
 .research-item:hover {
@@ -928,8 +922,7 @@ body {
 
 .research-image {
   width: 100%;
-  height: 100%; /* Ensure the image fills the container */
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
@@ -961,6 +954,7 @@ body {
 .description p {
   margin-bottom: 0;
 }
+
 
 
 
