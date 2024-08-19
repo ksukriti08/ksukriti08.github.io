@@ -816,6 +816,7 @@ body {
 #projects .section-heading h1 {
   color: #45489a;
   margin-bottom: 30px;
+  font-size: 2.5rem;
 }
 
 .projects-grid {
@@ -879,12 +880,12 @@ body {
 
 .description h3 {
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .description p {
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 
@@ -899,6 +900,7 @@ body {
 #research h2 {
   color: #45489a;
   margin-bottom: 30px;
+  font-size: 2.5rem;
 }
 
 .research-grid {
@@ -949,10 +951,12 @@ body {
 
 .description h3 {
   margin-top: 0;
+  font-size: 1.5rem;
 }
 
 .description p {
   margin-bottom: 0;
+  font-size: 1.1rem;
 }
 
 
