@@ -916,7 +916,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
-  height: 350px; 
+  height: 250px; 
 }
 
 .research-item:hover {
